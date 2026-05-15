@@ -1,0 +1,25 @@
+{
+  "loginPage": {
+    "metaTitle": "Sign in",
+    "heading": "Sign in to your account"
+  },
+  "loginForm": {
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "••••••••",
+    "totpCodeLabel": "TOTP code (if enabled)",
+    "totpCodePlaceholder": "123456",
+    "totpStepPrompt": "Step 2: enter the 6-digit code from your authenticator app.",
+    "submit": "Sign in",
+    "submitTotp": "Verify TOTP and sign in",
+    "submitting": "Signing in…",
+    "backToPassword": "Back to email/password",
+    "noAccount": "Don't have an account? Ask your administrator for an account.",
+    "forgotPasswordLink": "Forgot password?",
+    "afterPasswordReset": "Your password was updated. You can sign in with your new password.",
+    "errorLogin": "Login failed",
+    "errorRoleNotAllowed": "Your role does not grant access to the application yet. Please contact an administrator.",
+    "successLogin": "Logged in successfully"
+  }
+}

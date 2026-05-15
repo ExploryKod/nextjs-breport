@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    env_file: .env
+
+  adminer:
+    image: adminer
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 8081:8080
+  app:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SITE_URL: http://localhost:3001
+        NEXT_PUBLIC_AUTH_API: http://localhost:3000
+    ports:
+      - 3001:3000
+    depends_on:
+      - db
+    env_file: .env
+volumes:
+  postgres_data:
